@@ -186,6 +186,10 @@ footer img {
     section p {
         text-align: center;
     }
+
+    #last-section h1 {
+        text-align: center;
+    }
 }
 
 /* Tablet */
