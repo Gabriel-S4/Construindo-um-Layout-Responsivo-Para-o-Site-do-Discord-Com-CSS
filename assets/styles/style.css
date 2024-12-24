@@ -135,7 +135,7 @@ footer img {
 
 /* Mobile header background */
 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 520px) {
     header {
         background-image: url(../images/mobile/Header\ Backgroun.png);
     }
@@ -143,7 +143,7 @@ footer img {
 
 /* Desktop */
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 520px) {
     header {
         height: 459px;
         align-items: center;
