@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans';
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.79px;
+}
+
+header {
+    background-image: url(../images/desktop/Header.png);
+    background-position: center;
+    background-size: cover;
+    height: 505px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    transition: all 1s;
+}
+
+header h1 {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32px;
+    max-width: 278px;
+    color: white;
+}
+
+h1 {
+    font-family: 'Luckiest Guy';
+}
+
+header p {
+    color: white;
+}
+
+header nav {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+header nav button {
+    padding: 0px 15px;
+    height: 54px;
+    border-radius: 28px;
+    border: none;
+}
+
+header nav button a {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.79px;
+    text-align: center;
+    text-decoration: none;
+}
+
+header nav .btn-download {
+    background-color: white;
+}
+
+header nav .btn-download a {
+    color: #23272A;
+}
+
+header nav .btn-open {
+    background-color: #23272A;
+}
+
+header nav .btn-open a {
+    color: white;
+}
+
+/* Sections */
+
+section {
+    padding: 40px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 27px;
+}
+
+.banner img {
+    max-width: 607px;
+}
+
+/* Sections Containers */
+
+section .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 27px;
+}
+
+#section-2 {
+    background-color: #F6F6F6;
+}
+
+#last-section {
+    background-color: #F6F6F6;
+}
+
+/* Footer */
+
+footer {
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #23272A;
+    transition: all 1s;
+}
+
+footer img {
+    width: 162px;
+}
+
+/* Responsividade */
+
+/* Mobile header background */
+
+@media screen and (max-width: 428px) {
+    header {
+        background-image: url(../images/mobile/Header\ Backgroun.png);
+    }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 480px) {
+    header {
+        height: 459px;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 50px;
+        text-align: center;
+        line-height: 56px;
+        max-width: 313px;
+    }
+
+    header p {
+        text-align: center;
+        max-width: 757px;
+    }
+
+    header nav {
+        width: 502px;
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+    }
+
+    /* Tamanho alterado do botão */
+    
+    header nav button {
+        height: 44px;
+    }
+
+    /* Ajustando Fontes e espaçamento das Sections */
+    
+    section h2 {
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 54.47px;
+        text-align: center;
+    }
+
+    section p {
+        text-align: center;
+    }
+}
+
+/* Tablet */
+
+@media screen and (max-width: 762px){
+    .banner img {
+        width: 100%;
+    }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1028px) {
+        /* Sections - Desktop */
+
+        section {
+            padding: 24.5px;
+            display: flex;
+            flex-direction: row;
+            gap: 27px;
+            justify-content: center;
+        }
+    
+        section .text-container {
+            max-width: 351px;
+        }
+    
+        #last-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        #last-section .text-container {
+            align-items: center;
+            max-width: 802px;
+        }
+    
+        #last-section img {
+            max-width: 784px;
+        }
+    
+        #last-section h1 {
+            font-size: 40px;
+            line-height: 40px;
+            text-align: center;
+            max-width: 608px;
+        }
+    
+        /* Ajustando Fontes e espaçamento das Sections */
+    
+        section h2 {
+            font-size: 40px;
+            font-weight: 800;
+            line-height: 54.47px;
+        }
+    
+        /* Ajustando Sections Diferentes */
+    
+        #section-2 {
+            flex-direction: row-reverse;
+        }
+
+        /* Footer */
+
+        footer {
+            height: 134px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #23272A;
+            transition: all 1s;
+        }
+        
+        footer img {
+            width: 230px;
+        }
+
+        /* Section img */
+
+        .banner img {
+            max-width: 607px;
+       }
+}
